@@ -1,0 +1,21 @@
+{   
+    "action": "train",
+    "name" : "Framewise_Cross",
+    
+    "data" : "/workspace/kanggilpark/Endo/EndoWithdrawalTime/feature_extractor/data/cecum_4phase_full_train_valid.hdf5",
+    "batch_size" : 512,
+    "num_workers" : 8,
+    
+    "num_class" : 4,
+
+    "gpu_mode" : "DataParallel",
+    
+    "epochs" : 500,
+    "lr" : 1e-6,
+    "lr_scheduler" : "cosine_annealing_warm_restart",
+    
+    "print_freq" : 1,
+    "save_path" : "experiments/cross/",
+    "resume" : "off",
+    "cuda_visible_devices" : "0, 1, 2, 3"
+}

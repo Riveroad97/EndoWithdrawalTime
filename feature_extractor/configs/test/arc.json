@@ -1,0 +1,13 @@
+{   
+    "name" : "Framewise_ArcFace",
+    
+    "num_class" : 4,
+
+    "num_workers" : 4,
+    "batch_size" : 512,
+
+    "checkpoint" : "experiments/arc/weight/model_epoch24.pth",    
+    "save_path" : "/mnt/nasEndo/endoscope_video/하부/2번방/cecum_recognition/video_feature_arc",
+    "save_result" : "experiments/arc/result",
+    "cuda_visible_devices" : "6"
+}

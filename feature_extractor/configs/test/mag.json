@@ -1,0 +1,13 @@
+{   
+    "name" : "Framewise_MagFace",
+    
+    "num_class" : 4,
+
+    "num_workers" : 4,
+    "batch_size" : 512,
+
+    "checkpoint" : "experiments/mag/weight/model_epoch9.pth",    
+    "save_path" : "/mnt/nasEndo/endoscope_video/하부/2번방/cecum_recognition/video_feature_mag",
+    "save_result" : "experiments/mag/result",
+    "cuda_visible_devices" : "6"
+}
